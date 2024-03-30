@@ -1,0 +1,56 @@
+<script type="text/javascript">
+
+    function voting1(){
+        var a = parseInt(prompt("Enter Your Age :-"));
+        if(a >= 18){
+            document.write("<h1>You are Eligible For Voting </h1>");
+        }
+        else{
+            document.write("<h1>You are Not Eligible For Voting </h1>");
+        }
+    }
+
+    voting1();
+
+    // no return with parameter
+
+    function voting2(b){
+        if(b >= 18){
+            document.write("<h1>You are Eligible For Voting </h1>");
+        }
+        else{
+            document.write("<h1>You are Not Eligible For Voting </h1>");
+        }
+    }
+
+    voting2(17);
+    // return with no parameter
+    var c = parseInt(prompt("Enter Value Of C"));
+    function voting3(){
+        if(c >= 18){
+            return "You are Eligible For Voting";
+        }
+        else{
+            return "You are not Eligible For Voting";
+        }
+
+    }
+
+    var ans = voting3();
+    document.write("<h1>"+ans+"</h1>");
+    
+    //return with parameter
+
+    function voting4(d){
+        if(d >= 18){
+            return "You are Eligible For Voting";
+        }
+        else{
+            return "You are not Eligible For Voting";
+        }
+    }
+
+   var result = voting4(17);
+   
+   document.write("<h1>"+result+"</h1>");
+</script>

@@ -1,0 +1,102 @@
+<script type="text/javascript">
+    var a = parseInt(prompt("Enter Value Of A :-"));
+    var b = parseInt(prompt("Enter Value Of B :-"));
+    var c = parseInt(prompt("Enter Value Of C :-"));
+
+    // simple function
+
+    function greater(){
+        if(a > b){
+            if(a > c){
+                document.write("<h1>A is Big</h1>");
+            }
+            else{
+                document.write("<h1>A is Big</h1>");
+            }
+        }
+        else{
+            if(b > c){
+                document.write("<h1>B is Big</h1>");
+            }
+            else{
+                document.write("<h1>C is Big</h1>");
+            }
+        }
+    }
+
+    greater();
+
+    // no return with parameter
+
+    function greater2(d,e,f){
+        if(d > e){
+            if(d > f){
+                document.write("<h1>D is Big</h1>");
+            }
+            else{
+                document.write("<h1>F is Big</h1>");
+            }
+        }
+        else{
+            if(d > f){
+                document.write("<h1>E is Big</h1>");
+            }
+            else{
+                document.write("<h1>F is Big</h1>");
+            }
+        }
+    }
+
+    greater2(10,5,11);
+    // return with no parameter
+    var j = parseInt(prompt("Enter Value Of J"));
+    var k = parseInt(prompt("Enter Value Of K"));
+    var l = parseInt(prompt("Enter Value Of L"));
+    function greater3(){
+        if(j > k){
+            if(j > l){
+                return "J is Big";
+            }
+            else{
+                return "L is Big";
+            }
+        }
+        else{
+            if(k > l){
+                return "K is Big";
+            }
+            else{
+                return "L is Big";
+            }
+        }
+
+    }
+
+    var ans = greater3();
+    document.write("<h1>"+ans+"</h1>");
+    
+    //return with parameter
+
+    function greater4(g,h,i){
+        if(g > h){
+            if(g > i){
+                return "G is Big";
+            }
+            else{
+                return "I is Big";
+            }
+        }
+        else{
+            if(h > i){
+                return "H is Big";
+            }
+            else{
+                return "I is Big";
+            }
+        }
+    }
+
+   var result = greater4(100,55,21);
+   
+   document.write("<h1>"+result+"</h1>");
+</script>

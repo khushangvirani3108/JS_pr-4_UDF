@@ -1,0 +1,60 @@
+<script type="text/javascript">
+    var a = parseInt(prompt("Enter Value of A :-"));
+    var b = parseInt(prompt("Enter Value of B :-"));
+    var c = parseInt(prompt("Enter Value of C :-"));
+
+    //simple function
+    function triangle1(){
+        if(a + b + c == 180){
+            document.write("<h1>This Is a Triangle</h1>");
+        }
+        else{
+            document.write("<h1>This Is Not a Triangle</h1>");
+        }
+    }
+    triangle1();
+
+    // no return with parameter
+    function triangle2(d,e,f){
+        if(d + e + f == 180){
+            document.write("<h1>This Is a Triangle</h1>");
+        }
+        else{
+            document.write("<h1>This Is Not a Triangle</h1>");
+        }
+    }
+    triangle2(60,50,70);
+
+    //return with no parameter
+
+    var g = parseInt(prompt("Enter Value of G :-"));
+    var h = parseInt(prompt("Enter Value of H :-"));
+    var i = parseInt(prompt("Enter Value of I :-"));
+    function triangle3(){
+        if(g + h + i == 180){
+            return "This Is a Triangle";
+        }
+        else{
+            return "This Is not a Triangle";
+        }
+    }
+    var ans = triangle3();
+    document.write("<h1>"+ans+"</h1>");
+
+    //return with parameter
+
+    function triangle4(j,k,l){
+        if(j + k + l == 180){
+            return "This Is a Triangle";
+        }
+        else{
+            return "This Is not a Triangle";
+        }
+    }
+
+   var result = triangle4(17,22,65);
+   
+   document.write("<h1>"+result+"</h1>");
+
+    
+</script>

@@ -1,0 +1,65 @@
+<script type="text/javascript">
+    var a = parseInt(prompt("Enter Value Of A :-"));
+    var b = parseInt(prompt("Enter Value Of B :-"));
+
+    // simple function
+
+    function greater(){
+        var swap;
+        swap = a;
+        a = b;
+        b = swap;
+
+        document.write("<h1>A after swapping :- "+a+"</h1>");
+        document.write("<h1>B after swapping :- "+b+"</h1>");
+    }
+
+    greater();
+
+    // no return with parameter
+
+    function greater2(c,d){
+        var swap2;
+        swap2 = c;
+        c = d;
+        d = swap2;
+
+        document.write("<h1>C after swapping :- "+c+"</h1>");
+        document.write("<h1>D after swapping :- "+d+"</h1>");
+    }
+
+    greater2(10,11);
+    
+    // return with no parameter
+    var e = parseInt(prompt("Enter Value Of E :-"));
+    var f = parseInt(prompt("Enter Value Of F :-"));
+    function greater3(){
+        var swap3;
+        swap3 = e;
+        e = f;
+        f = swap3;
+
+       return e;
+       return f;
+    }
+
+    var ans = greater3();
+    document.write("<h1>anwer after swapping :- "+ans+"</h1>");
+    
+    //return with parameter
+
+    function greater4(g,h){
+        var swap4;
+        swap4 = g;
+        g = h;
+        h = swap4;  
+
+        return g;
+        return h;
+
+    }
+
+   var result = greater4(100,21);
+   
+   document.write("<h1>Ans :-"+result+"</h1>");
+</script>

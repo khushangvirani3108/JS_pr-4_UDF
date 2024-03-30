@@ -1,0 +1,47 @@
+<script type="text/javascript">
+     var a = parseInt(prompt("Enter Value Of A :- "));
+    var b = parseInt(prompt("Enter Value Of B :- "));
+    var c = parseInt(prompt("Enter Value Of C :- "));
+    var d = parseInt(prompt("Enter Value Of D :- "));
+
+    function greater(a,b,c,d){
+        if(a > b){
+		if(a > c){
+			if(a > d){
+				document.write("<h1>A is Big</h1>");
+			}
+			else{
+				document.write("<h1>D is Big</h1>");
+			}
+		}
+		else{
+			if(c > d){
+				document.write("<h1>C is Big</h1>");
+			}
+			else{
+				document.write("<h1>D is Big</h1>");
+			}
+		}
+	}
+	else{
+		if(b > c){
+			if(b > d){
+				document.write("<h1>B is Big</h1>");
+			}
+			else{
+				document.write("<h1>D is Big</h1>");
+			}
+		}
+		else{
+			if(c > d){
+				document.write("<h1>C is Big</h1>");
+			}
+			else{
+				document.write("<h1>D is Big</h1>");
+			}
+		}
+	}
+    }
+
+    greater(a,b,c,d);
+</script>
